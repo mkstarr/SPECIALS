@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
+        <title>Diagonal Banner Landing Page</title>
+    </head>
+    <body>
+        <div id="outer">
+            <div class="verticalBar"></div>
+            <div class="horizontalBar"></div>
+            <a href="#"><img class="banner" src="images/genericWebBanner2.png" width="600px" alt="www.imagineadv-webbanners.com > Generic Web Banner, Shop Now IN-STOCK Specials, purple" /></a>
+
+            <ul class="main">
+                <ul class="Catalog dropdown">
+                    <lh><a href="#">Catalog</a></lh>
+                    <li>></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                </ul>
+                <ul class="Orders dropdown">
+                    <lh><a href="#">Orders</a></lh>
+                    <li>></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                </ul>
+                <ul class="Purchase dropdown">
+                    <lh><a href="#">Purchase</a></lh>
+                    <li>></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                </ul>
+                <ul class="Reviews dropdown">
+                    <lh><a href="#">Reviews</a></lh>
+                    <li>></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                </ul>
+                <ul class="Contact dropdown">
+                    <lh><a href="#">Contact</a></lh>
+                    <li>></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                </ul>
+            </ul>
+
+            <span class="centerText">{{page content}}</span>
+        </div>
+
+
+        <script type="text/javascript" src="scripts/script.js"></script>
+        <script type="text/javascript">
+            var myClasses = document.getElementsByClassName("centerText");
+            console.log(myClasses);
+            for (var i = 0; i < myClasses.length; i++) {
+                myClasses[i].innerHTML = getHTML("snippets/Contact.html");
+            }
+        </script>
+    </body>
+</html>

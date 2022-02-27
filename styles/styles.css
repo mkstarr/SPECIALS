@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@1,500&family=Montserrat:wght@100&display=swap');
+
+body{
+    height: 800px;
+    background-color: rgb(224,20,77);
+    margin:0px;
+    color: rgb(10,18,50);
+}
+
+img.banner{
+    position:fixed;
+    bottom:180px;
+    right:-7px;
+    transform: rotate(-45deg);
+    border-radius:50px;
+}
+
+@keyframes bannerJiggle{
+    0%{transform: rotate(-45deg);}
+    17%{transform: rotate(-50deg);}
+    34%{transform: rotate(-40deg);}
+    51%{transform: rotate(-50deg);}
+    68%{transform: rotate(-40deg);}
+    84%{transform: rotate(-50deg);}
+    100%{transform: rotate(-45deg);}
+}
+
+a img.banner:active{
+    animation: bannerJiggle 1.7s ease-in-out 1;
+}
+
+div.verticalBar{
+    background-color:rgb(10,18,50);
+    position:fixed;
+    right:50px;
+    height:100%;
+    width:100px;
+}
+
+div.horizontalBar{
+    background-color:rgb(10,18,50);
+    position:fixed;
+    bottom:50px;
+    width:100%;
+    height:100px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 120%;
+}
+
+ul.dropdown{
+    margin-bottom:10px;
+}
+
+ul.dropdown lh{
+    padding:2px;
+    border: 1px dotted rgb(10,18,50);
+    border-radius:6px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul.dropdown lh a{
+    padding:2px;
+    color: white;
+}
+
+ul.dropdown lh a:visited{
+    color:rgb(159,219,247);
+}
+
+ul.dropdown lh a:focus{
+    color:rgb(10,18,50);
+}
+
+ul.dropdown lh a:hover{
+    color:rgb(224,20,77);
+}
+
+ul.dropdown lh a:active{
+    color:rgb(10,18,50);
+}
+
+ul.dropdown li{
+    display: none;
+}
+
+ul.dropdown:hover lh{
+    background-color: white;
+    border-radius:6px;
+}
+
+ul.dropdown:hover li{
+    display: inline;
+}
+
+ul.dropdown li a{
+    color:white;
+}
+
+ul.dropdown li a:visited{
+    color:rgb(159,219,247);
+}
+
+ul.dropdown li a:focus{
+    color:rgb(10,18,50);
+}
+
+ul.dropdown li a:hover{
+    color:rgb(98,97,164);
+}
+
+ul.dropdown li a:active{
+    color:rgb(10,18,50);
+}
+
+ul.main{
+    position:absolute;
+    top:10px;
+    left:10px;
+}
+
+ul.main li{
+    margin-bottom: 5px;
+}
+
+span.centerText{
+    font-family: 'Alegreya SC', serif;
+    position:absolute;
+    left:40%;
+    top:35%;
+    font-size:200%;
+}
